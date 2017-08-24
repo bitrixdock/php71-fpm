@@ -1,4 +1,4 @@
-FROM php:7.1-fpm
+FROM phpdockerio/php71-fpm:latest
 
 MAINTAINER vitams
 
