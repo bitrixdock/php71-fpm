@@ -1,6 +1,6 @@
 FROM php:7.1-fpm
 
-MAINTAINER vmpartner
+MAINTAINER vitams
 
 RUN apt-get update  && \
     apt-get install -y --no-install-recommends wget apt-transport-https lsb-release ca-certificates && \
