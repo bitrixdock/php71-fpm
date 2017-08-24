@@ -2,12 +2,6 @@ FROM phpdockerio/php71-fpm:latest
 
 MAINTAINER vitams
 
-RUN apt-get update  && \
-    apt-get install -y --no-install-recommends wget apt-transport-https lsb-release ca-certificates && \
-    wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg && \
-    echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" >> /etc/apt/sources.list && \
-    echo "deb-src https://packages.sury.org/php/ $(lsb_release -sc) main" >> /etc/apt/sources.list
-
 RUN apt-get update \
     && apt-get -y --no-install-recommends install \
     php7.1-memcached \
